@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/myaccount_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/account_svgrepo_com"
+                        app:tint="@color/black"
+                        android:id="@+id/account_profile_icon"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myaccount_profile_text"
+                        android:text="My account"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:textColor="@color/black"
+                        android:layout_alignStart="@id/account_profile_icon"
+                        android:layout_alignTop="@id/account_profile_icon"
+                        android:layout_marginStart="60dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_right_1_svgrepo_com"
+                        app:tint="@color/black"
+                        android:layout_alignTop="@id/account_profile_icon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/myorders_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shopping_cart_svgrepo_com"
+                        android:id="@+id/profile_fragment_orders"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_fragment_orders_text"
+                        android:text="My orders"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:textColor="@color/black"
+                        android:layout_alignStart="@id/profile_fragment_orders"
+                        android:layout_alignTop="@id/profile_fragment_orders"
+                        android:layout_marginStart="60dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_right_1_svgrepo_com"
+                        app:tint="@color/black"
+                        android:layout_alignTop="@id/profile_fragment_orders"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mylabtests_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lab_test_tube_svgrepo_com"
+                        android:id="@+id/profile_fragment_labtests"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_fragment_labtests_text"
+                        android:text="My lab tests"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:textColor="@color/black"
+                        android:layout_alignStart="@id/profile_fragment_labtests"
+                        android:layout_alignTop="@id/profile_fragment_labtests"
+                        android:layout_marginStart="60dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_right_1_svgrepo_com"
+                        app:tint="@color/black"
+                        android:layout_alignTop="@id/profile_fragment_labtests"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/myconsultation_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_rate_svgrepo_com"
+                        android:id="@+id/profile_fragment_consultation"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_fragment_consultation_text"
+                        android:text="Rate your recent purchases"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:textColor="@color/black"
+                        android:layout_alignStart="@id/profile_fragment_consultation"
+                        android:layout_alignTop="@id/profile_fragment_consultation"
+                        android:layout_marginStart="60dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_right_1_svgrepo_com"
+                        app:tint="@color/black"
+                        android:layout_alignTop="@id/profile_fragment_consultation"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pillreminder_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pill_svgrepo_com"
+                        android:id="@+id/profile_fragment_pillreminder"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_fragment_pillreminder_text"
+                        android:text="Pill reminder"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:textColor="@color/black"
+                        android:layout_alignStart="@id/profile_fragment_pillreminder"
+                        android:layout_alignTop="@id/profile_fragment_pillreminder"
+                        android:layout_marginStart="60dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_right_1_svgrepo_com"
+                        app:tint="@color/black"
+                        android:layout_alignTop="@id/profile_fragment_pillreminder"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="More"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/helpandsupport_profile_text"
+                    android:text="Need help?"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_profile_text"
+                    android:text="Settings"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutus_profile_text"
+                    android:text="About us"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="8dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:textColor="#ff0000" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</FrameLayout>
